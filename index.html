@@ -24,7 +24,9 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html, body { height: 100%; }
+  html, body {
+    min-height: 100%;
+  }
 
   body {
     background: var(--bg);
@@ -33,6 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
     padding: 8vh 24px;
     line-height: 1.6;
   }
@@ -167,8 +170,6 @@
     </section>
 
     <hr>
-
-    <p class="closer">excited to get after it.</p>
 
     <nav class="links">
       <a href="https://x.com/anttayl0r" target="_blank" rel="noopener">x</a>
