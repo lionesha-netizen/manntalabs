@@ -3,8 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Antony Taylor</title>
-<meta name="description" content="i build companies.">
+<title>Mannta Labs</title>
+<meta name="description" content="we help leaders rebuild what isn't working.">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -18,9 +24,7 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html, body {
-    height: 100%;
-  }
+  html, body { height: 100%; }
 
   body {
     background: var(--bg);
@@ -35,28 +39,23 @@
 
   main {
     width: 100%;
-    max-width: 480px;
+    max-width: 560px;
   }
 
   .mark {
-    width: 36px;
-    height: 36px;
-    border: 1px solid var(--ink);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 12px;
-    letter-spacing: 0.02em;
+    height: 40px;
+    width: 40px;
+    display: block;
+    border-radius: 8px;
     margin-bottom: 48px;
   }
 
   h1 {
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 500;
-    font-size: clamp(24px, 4vw, 30px);
+    font-size: clamp(22px, 4vw, 27px);
     letter-spacing: -0.01em;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
   }
 
   .cursor {
@@ -74,7 +73,7 @@
   }
 
   section {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
   }
 
   .label {
@@ -83,36 +82,31 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--muted);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
-  ul {
-    list-style: none;
-  }
-
-  li {
-    position: relative;
-    padding-left: 16px;
+  .stack p {
     font-size: 16px;
-    margin-bottom: 8px;
+    margin-bottom: 14px;
+    max-width: 52ch;
   }
 
-  li::before {
-    content: "\2014";
-    position: absolute;
-    left: 0;
+  .qualifier {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
     color: var(--muted);
-  }
-
-  .advise p {
-    font-size: 16px;
-    margin-bottom: 8px;
+    margin-top: 20px;
   }
 
   hr {
     border: none;
     border-top: 1px solid var(--line);
-    margin: 40px 0 24px;
+    margin: 36px 0;
+  }
+
+  .closer {
+    font-size: 16px;
+    margin-bottom: 40px;
   }
 
   .links {
@@ -142,24 +136,39 @@
 </head>
 <body>
   <main>
-    <div class="mark">AT</div>
+    <img class="mark" src="logo-mark.png" alt="Mannta Labs">
 
-    <h1>i build companies.<span class="cursor">_</span></h1>
+    <h1>we help leaders rebuild what isn't working.<span class="cursor">_</span></h1>
 
     <section>
-      <p class="label">right now</p>
-      <ul>
-        <li>building a newco with some old friends</li>
-        <li>rebuilding an old co i built once already — solo, using ai</li>
-      </ul>
-    </section>
-
-    <section class="advise">
-      <p>i advise founders who know they need help building.</p>
-      <p>i advise ceos remaking their companies with ai.</p>
+      <p class="label">founders</p>
+      <div class="stack">
+        <p>you raised a big seed. still hunting for product-market fit.</p>
+        <p>you raised a big a. can't find a repeatable gtm motion.</p>
+        <p>you raised a big b, and hit a wall. you need to shift down a gear into the business this actually is — or go find the second demand curve.</p>
+        <p>we help you remake your startup mid-flight.</p>
+        <p>we also help you find partnerships that lead somewhere. sometimes that's an acquisition.</p>
+      </div>
+      <p class="qualifier">requirements: high eq. first principles thinking.</p>
     </section>
 
     <hr>
+
+    <section>
+      <p class="label">ceos</p>
+      <div class="stack">
+        <p>you have the ai mandate — board, pe owner, or self-imposed.</p>
+        <p>you know a buy strategy is fraught. you must own your means of production.</p>
+        <p>you know no one really knows. not the incumbent. not the ai startup.</p>
+        <p>you need to draw the line around what's actually yours.</p>
+        <p>we help you design and implement your own enduring ai transformation.</p>
+      </div>
+      <p class="qualifier">requirements: clear mandate. time.</p>
+    </section>
+
+    <hr>
+
+    <p class="closer">excited to get after it.</p>
 
     <nav class="links">
       <a href="https://x.com/anttayl0r" target="_blank" rel="noopener">x</a>
