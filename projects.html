@@ -43,12 +43,29 @@
     max-width: 480px;
   }
 
+  .lockup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+    border-bottom: none;
+  }
+
+  .lockup:hover { border-bottom: none; }
+
   .mark {
     height: 40px;
     width: 40px;
     display: block;
     border-radius: 8px;
-    margin-bottom: 48px;
+  }
+
+  .wordmark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
   }
 
   h1 {
@@ -119,8 +136,9 @@
 </head>
 <body>
   <main>
-    <a href="/" aria-label="Mannta Labs home">
+    <a href="/" class="lockup" aria-label="Mannta Labs home">
       <img class="mark" src="logo-mark.png" alt="Mannta Labs">
+      <span class="wordmark">mannta labs</span>
     </a>
 
     <h1>projects.<span class="cursor">_</span></h1>
