@@ -45,12 +45,25 @@
     max-width: 560px;
   }
 
+  .lockup {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 48px;
+  }
+
   .mark {
     height: 40px;
     width: 40px;
     display: block;
     border-radius: 8px;
-    margin-bottom: 48px;
+  }
+
+  .wordmark {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: -0.01em;
   }
 
   h1 {
@@ -145,7 +158,10 @@
 </head>
 <body>
   <main>
-    <img class="mark" src="logo-mark.png" alt="Mannta Labs">
+    <div class="lockup">
+      <img class="mark" src="logo-mark.png" alt="Mannta Labs">
+      <span class="wordmark">mannta labs</span>
+    </div>
 
     <h1>building. and helping others build.<span class="cursor">_</span></h1>
 
